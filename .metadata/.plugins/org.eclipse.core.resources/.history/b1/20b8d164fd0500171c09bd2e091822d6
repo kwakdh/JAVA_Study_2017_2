@@ -1,0 +1,21 @@
+package dddddd;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String args[]){
+	//»ï°¢Çü ³ĞÀÌ ±¸ÇÏ±â 
+	System.out.println("»ï°¢Çü ¹Øº¯ ? ");
+	Scanner scn =new Scanner(System.in);
+    int x =  scn.nextInt();
+    
+	System.out.println("»ï°¢Çü ³ôÀÌ ? ");
+	Scanner scn2 =new Scanner(System.in);
+    int y =  scn2.nextInt();
+    
+    int Sresult= (x*y)/2;
+    
+    System.out.println("»ï°¢ÇüÀÇ ³ĞÀÌ´Â : "+ Sresult);
+    
+	}
+}

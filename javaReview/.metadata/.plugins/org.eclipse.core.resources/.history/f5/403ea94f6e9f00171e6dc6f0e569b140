@@ -1,0 +1,75 @@
+package rensyu;
+
+import java.util.Scanner;
+
+public class rensyu1 {
+
+	public static void main(String[] args) {
+	 //switch문을 이용하여 컴퓨터 vs 나 가위바위보 
+		
+		int user =0;
+		int com =0;
+		
+		System.out.println("가위 , 바위 , 보 입력하시오");
+		Scanner scan = new Scanner(System.in);
+		String input = scan.nextLine();
+		
+		if(input=="가위"){
+			user=1;
+		}else if(input =="바위"){
+			user=2;
+		}else if(input =="보"){
+			user=3;
+		}
+		
+		com=(int)(Math.random()*3)+1; //컴퓨터 랜덤값 입력하기 
+		
+		System.out.println("당신은"+user+"입니다.");
+		System.out.println("컴퓨터는"+com+"입니다.");
+	   if(user==1){	
+		switch(com){
+		
+		case 1:
+			System.out.println("비겼습니다.");
+		    break;
+		
+		case 2:
+			System.out.println("졌습니다.");
+		    break;
+		case 3:
+			System.out.println("이겼습니다.");
+		    break;
+		} }else if(user==2){	
+			switch(com){
+			
+			case 1:
+				System.out.println("이겼습니다.");
+			    break;
+			
+			case 2:
+				System.out.println("비겼습니다.");
+			    break;
+			case 3:
+				System.out.println("졌습니다.");
+			    break;
+			}
+			}else if(user==3){	
+				switch(com){
+				
+				case 1:
+					System.out.println("졌습니다.");
+				    break;
+				
+				case 2:
+					System.out.println("이겼습니다.");
+				    break;
+				case 3:
+					System.out.println("비겼습니다.");
+				    break;
+				}
+				}
+		
+		
+	}
+
+}

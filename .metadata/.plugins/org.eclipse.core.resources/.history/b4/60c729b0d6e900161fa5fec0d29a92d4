@@ -1,0 +1,54 @@
+package rensyu;
+
+//조상타입의 참조변수로 자손타입의 객체를 다룰수 있는 것
+class player{
+	{System.out.println("완전 조상 초기화 블럭");}
+	
+	String name;
+	
+	player(String pname){
+		System.out.println(pname+"  완전 조상 생성자");
+	}
+	
+}
+class forward extends player{
+	
+	{System.out.println("엄마아빠 조상 초기화 블럭");}
+	forward(String pname){
+		super("지디");
+		System.out.println(pname+"  엄마아빠 생성자");
+	} 
+}
+
+class powerforward extends forward{
+	
+	{System.out.println("자식 초기화 블럭");}
+	powerforward(String pname){
+		super("지아코");
+		System.out.println(pname+"  자식 생성자");
+	}	
+	
+	powerforward(){
+		super("지아코");
+		System.out.println("스트링 없는 자식 생성자");
+	}
+}
+
+class powerpowerforward extends powerforward{
+	{System.out.println("아기 초기화 블럭");}
+	powerpowerforward(){
+		//super("은영");
+		super();
+		System.out.println("아기 생성자");
+	}	
+}
+
+public class inheritance {
+    	public static void main(String args[]) {
+     
+    		powerpowerforward p1 = new powerpowerforward();
+    	
+    		
+    	}
+
+}

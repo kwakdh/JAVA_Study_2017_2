@@ -1,0 +1,28 @@
+package netWorkRensyu;
+
+import java.net.*;
+
+public class ParseURL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		URL opinion = null;
+		URL homePage = null;
+		
+		try {
+			homePage = new URL("http://news.hankooki.com:80");
+		    opinion = new URL(homePage,"opinion/editiorial.htm");
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("protocol "+opinion.getProtocol() );
+		System.out.println("host: "+ opinion.getHost());
+		System.out.println("Port: "+ opinion.getPort());
+		System.out.println("File: "+ opinion.getFile());
+		System.out.println("Path: "+ opinion.getPath());
+	}
+
+}

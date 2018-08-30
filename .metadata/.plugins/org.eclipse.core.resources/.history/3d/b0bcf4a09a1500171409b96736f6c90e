@@ -1,0 +1,20 @@
+package suUp;
+
+import java.util.HashMap;
+
+public class suUp0327_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		HashMap map =new HashMap();
+		map.put("myid", "1234");
+		map.put("myidid", "1111");
+		map.put("myidid", "1004");
+		
+		System.out.println(map.get("myid"));
+		
+	}
+
+}

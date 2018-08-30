@@ -1,0 +1,168 @@
+package suUp;
+
+import java.util.TreeSet;
+
+public class suUp0324 {
+	public static void main(String[] args) {
+	
+/*	Set setA =new HashSet();
+	Set setB =new HashSet();
+	
+	Set setHab =new HashSet();  //합집합
+	Set setCha =new HashSet();  //차집합
+	Set setKyo =new HashSet();  //교집합
+	
+	setA.add(1);
+	setA.add(2);
+	setA.add(3);
+	setA.add(4);
+	setA.add(5);
+	
+	System.out.println("setA:"+setA);
+	
+	setB.add(4);
+	setB.add(5);
+	setB.add(6);
+	setB.add(7);
+	setB.add(8);
+	
+	System.out.println("setB:"+setB);
+	
+	
+	
+	 * *****교집합 구하자*****(retainAll 이라는 메소드가 있지만.....)
+	 * setB의 각원소에 대해서 setA가 그 원소를 포함하고 있으면 setKyo에 그 원소를 add
+	 * 
+	
+	//setA.retainAll(setB)
+	//이렇게 만들때 setA와 setB는 그대로인가? 아니면  setA와 setB의 객체가 빠지고 만들어지는것인가?
+	//지 집합 자체가 변화한다. 원본이 변화되는것이다!!!!!!!!!!
+	
+	Iterator it=setB.iterator();
+	while(it.hasNext()){
+		
+		Object tmp=it.next();
+		if(setA.contains(tmp))
+			setKyo.add(tmp);
+	}
+	System.out.println("교집합: "+setKyo);
+	
+	
+	 * 
+	 * 차집합 구하자(setA-setB)(removeAll 이라는 메소드가 있지만.....)
+	 * setA의 각 원소에 대해 setB가 그 원소를 포함하고 있지 않으면 setCha에 그원소를 add
+	 * 
+	 * 
+
+	 it=setA.iterator();
+	while(it.hasNext()){
+		
+		Object tmp=it.next();
+		if(!setB.contains(tmp))
+			//if(setB.contains(tmp)==false)
+			setCha.add(tmp);
+	}
+	System.out.println("차집합: "+setCha);
+	
+	
+	
+	
+	 * 합집합 구하자(setA+setB)
+	 * setA의 각원소를 setHap에 add
+	 * setB의 각원소를 setHap에 add
+	 * 
+	
+	
+	 it=setA.iterator();
+		while(it.hasNext())
+			setHab.add(it.next());
+	 it=setB.iterator();
+	 while(it.hasNext())
+			setHab.add(it.next());
+		
+		System.out.println("합집합: "+setHab);
+		
+		
+	
+	
+	
+	*/
+	
+	// TreeSet :순서가 있다. root가 맨위에 있다. 
+    // root는 두명이하의 자식을 가져야한다 (이진트리)
+    /* 내보다 작은놈은 왼쪽자식 내보다 큰놈은 오른쪽자식
+     *                7(root)
+     *             4      9(두명이하의 자식을 가져야한다.)
+     *            1 5
+     *            
+     *comparator인터페이스를 제공해야지 treeSet을 할수있다
+     *comparator 제공해줘야한다!!!!! (그렇지않으면 treeSet에 두번째 객체를 저자할때 예외발생)           
+     *         
+     *            
+     * */	
+	
+		
+	//****************TreeSetLotto*********************
+	// TreeSet객체생성, 이객체를 set이라고 하자
+    // set.size()가 6미만인 동안
+	// 1~45사이의 무작위 정수값을 생성해 set.add라고 하자
+	// set에 있는 원소를 하나씩 찍어보면 정수의 오름차순으로 나온다. (treeSet은 순서 보장!!
+	//	내보다 큰건 오른쪽 내보다 짝은건 왼쪽 이런순서 ..입력된 순서대로 나오는 것이 아님)	
+	// HashSet을 이용했을때는 hasSet에 로또 번호를 넣고 정렬하기 위해서 
+	// HashSet을 가지고 list생성했고 그 list를 Colloections.sort 메소드를 호출해서 정렬!
+		
+	
+		
+		
+		/*Set set =new HashSet();
+		for(int i=0 ; set.size()<6 ; i++){
+			
+		//0 (inclusive)~ 1(exclusive)	
+		//random함수는 int 형변환 해줘야 한다!
+	     int num = (int)(Math.random()*45+1);
+	     set.add(num);
+	     
+		}
+		//set자체가 순서 없는건데 sort하는건 말이안된다!!!
+		//Collections.sort(set);
+		List list = new LinkedList(set);
+		
+		System.out.println("list:"+list);
+		Collections.sort(list);
+	    System.out.println("set: "+set);
+
+	    System.out.println("After sorting list: "+list);
+	
+	*/
+	/*	
+	TreeSet set =new TreeSet();
+	while(set.size()<6){
+		
+		int num = (int)(Math.random()*45+1);
+		set.add(num);
+		
+	  }
+	  System.out.println(set);
+
+	*/
+	
+		
+	//************TreeSet2************	
+		
+		TreeSet set =new TreeSet();
+		String form ="b";
+		String to ="d";
+		// b보다 크고 d보다 작을때
+		// 범위 검사할때 ~_~
+		
+		set.add("abc");set.add("alien");set.add("bat");
+		set.add("car");set.add("Car");set.add("disk");set.add("dance");
+		set.add("elephant");set.add("elevator");set.add("fan");set.add("flower");
+		
+		System.out.println(set);
+		
+		
+		
+	
+	}		
+}

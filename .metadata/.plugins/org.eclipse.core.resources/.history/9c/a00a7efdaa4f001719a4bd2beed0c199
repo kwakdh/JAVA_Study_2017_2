@@ -1,0 +1,34 @@
+package netWorkRensyu;
+
+import java.io.*;
+import java.net.*;
+
+public class ParseURL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  
+    
+    URLConnection uc;
+	try {  
+		URL aURL = new URL("http://www.daum.net");
+		uc = aURL.openConnection();  
+		BufferedReader in = new BufferedReader(
+    		new InputStreamReader(uc.getInputStream()));
+		String inputLine;
+		
+		while((inputLine= in.readLine())!= null){
+			System.out.println(inputLine);
+			in.close();
+		}
+		
+		
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+    
+
+	}
+
+}

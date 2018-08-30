@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;JDBC_2.board&apos; to &apos;Board&apos;&#x0D;&#x0A;- Original project: &apos;JDBC_2&apos;&#x0D;&#x0A;- Original element: &apos;JDBC_2.board&apos;&#x0D;&#x0A;- Renamed element: &apos;JDBC_2.Board&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;board&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;JDBC_2{board.java[board" matchStrategy="1" name="Board" qualified="false" references="true" similarDeclarations="false" stamp="1494206293998" textual="false" version="1.0"/>
+</session>

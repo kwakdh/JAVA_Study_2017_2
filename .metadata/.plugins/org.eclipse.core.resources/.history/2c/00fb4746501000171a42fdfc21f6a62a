@@ -1,0 +1,69 @@
+package suUp;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class suUp0324 {
+	public static void main(String[] args) {
+	
+	Set setA =new HashSet();
+	Set setB =new HashSet();
+	
+	Set setHab =new HashSet();  //합집합
+	Set setCha =new HashSet();  //차집합
+	Set setKyo =new HashSet();  //교집합
+	
+	setA.add(1);
+	setA.add(2);
+	setA.add(3);
+	setA.add(4);
+	setA.add(5);
+	
+	System.out.println("setA:"+setA);
+	
+	setB.add(4);
+	setB.add(5);
+	setB.add(6);
+	setB.add(7);
+	setB.add(8);
+	
+	System.out.println("setB:"+setB);
+	/*
+	 * *****교집합 구하자*****(retainAll 이라는 메소드가 있지만.....)
+	 * setB의 각원소에 대해서 setA가 그 원소를 포함하고 있으면 setKyo에 그 원소를 add
+	 * 
+	 * 
+	 * 차집합 구하자(setA-setB)(removeAll 이라는 메소드가 있지만.....)
+	 * setA의 각 원소에 대해 setB가 그 원소를 포함하고 있지 않으면 setCha에 그원소를 add
+	 * 
+	 * 합집합 구하자(setA+setB)
+	 * setA의 각원소를 setHap에 add
+	 * setB의 각원소를 setHap에 add
+	 * 
+	 * 
+	 * 
+	 * */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}

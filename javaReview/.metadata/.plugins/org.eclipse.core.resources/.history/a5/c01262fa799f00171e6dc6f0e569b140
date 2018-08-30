@@ -1,0 +1,46 @@
+package rensyu;
+
+import java.util.Scanner;
+
+public class rensyu1 {
+
+	public static void main(String[] args) {
+		   // 키보드로부터 주민등록번호를 입력 받고,
+		   // 1. 입력된 주민등록번호의 유효성 검사 기능
+		   // 2. 생년월일 출력 -> 1977년 8월 40일
+		   // 3. 나이 : 한국 나이, 만 나이 (날짜: Date)
+		   // 4. 성별: 남성, 여성
+		 
+	System.out.println("주민등록 번호 입력하시오.");
+	Scanner scan = new Scanner(System.in);
+	
+	String jumin = scan.nextLine();
+	//배열로 나열됨.
+	
+	String jumin2[]= jumin.split("-"); 
+
+	int maeJumin[]= new int[5]; //배열 생성  
+	
+	for(int i =0 ; i<7 ; i++){
+		
+		maeJumin[i]=Integer.parseInt(jumin2[i]);
+
+	}
+	
+	
+	//첫번째 배열 한글자씩 자르기
+/*	for(int i =0 ; i<6 ; i++){
+		
+		 maeJumin[i]=jumin2[1].charAt(i);
+		 System.out.println(maeJumin[i]);
+		 
+	}*/
+	
+	
+	
+		
+		
+		
+	}
+
+}

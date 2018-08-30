@@ -1,0 +1,47 @@
+package rensyu;
+
+class player{
+	
+	String name;
+	player(String pname){
+		System.out.println(pname+"  완전 조상 생성자");
+	}
+	
+}
+class forward extends player{
+	
+	forward(String pname){
+		super("지디");
+		System.out.println(pname+"  엄마아빠 생성자");
+	} 
+}
+class powerforward extends forward{
+	powerforward(String pname){
+		super("지아코");
+		System.out.println(pname+"  자식 생성자");
+	}	
+	
+	powerforward(){
+		super("지아코");
+		System.out.println("스트링 없는 자식 생성자");
+	}
+}
+
+class powerpowerforward extends powerforward{
+	
+	powerpowerforward(){
+		//super("은영");
+		super();
+		System.out.println("아기 생성자");
+	}	
+}
+
+public class inheritance {
+    	public static void main(String args[]) {
+     
+    		powerpowerforward p1 = new powerpowerforward();
+    	
+    		
+    	}
+
+}

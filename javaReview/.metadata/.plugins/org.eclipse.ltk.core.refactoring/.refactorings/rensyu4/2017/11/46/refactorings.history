@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;rensyu4.rec&apos; to &apos;exam1&apos;&#x0D;&#x0A;- Original project: &apos;rensyu4&apos;&#x0D;&#x0A;- Original element: &apos;rensyu4.rec&apos;&#x0D;&#x0A;- Renamed element: &apos;rensyu4.exam1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;rec&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;rensyu4{rec.java[rec" matchStrategy="1" name="exam1" qualified="false" references="true" similarDeclarations="false" stamp="1510580498589" textual="false" version="1.0"/>
+</session>

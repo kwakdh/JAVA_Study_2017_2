@@ -1,0 +1,20 @@
+package rensyu;
+
+public class InnerClass {
+   class Cal{
+	   int value =0;
+	   public void plus(){
+		   value++;
+	   }
+   }
+	
+	public static void main(String[] args) {
+     InnerClass c = new InnerClass();
+     InnerClass.Cal cal = c.new Cal();
+     cal.plus();
+     System.out.println(cal.value);
+		
+		
+	}
+
+}

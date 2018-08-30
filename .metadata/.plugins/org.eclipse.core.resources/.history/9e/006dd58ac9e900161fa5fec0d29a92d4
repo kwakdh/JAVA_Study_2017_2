@@ -1,0 +1,42 @@
+package rensyu;
+
+class car{
+	
+	String color;
+	int door;
+	
+	void drive(){
+		System.out.println("√‚πﬂ√‚πﬂ!!");
+	}
+	void stop(){
+		System.out.println("∏ÿ√Á∂˘!");
+	}
+	
+}
+class fireEngine extends car{
+	 void water(){
+		 System.out.println("π∞ª—∑¡");
+	 }	 
+}
+class Ambulance extends car{
+	 void siren(){
+		 System.out.println("¿¶¿¶");
+	 }	 
+}
+
+
+
+public class inheritance {
+    	public static void main(String args[]) {
+     
+    		car c;
+    		fireEngine f= new fireEngine();
+    		Ambulance a= new Ambulance();
+    		
+    		
+    		f=(fireEngine)a;
+    		
+    	}
+
+}
+}

@@ -1,0 +1,24 @@
+package suUp4_3;
+
+public class DAOTest {
+
+	   public static void main(String[] args) {
+	      // TODO Auto-generated method stub
+	      BoardDAO dao = null;
+	      try {
+	         dao = new BoardDAO();
+	         System.out.println("dao 생성 성공");
+	         /*
+	         dao.insert();
+	         dao.update();
+	         dao.delete();
+	         dao.select();
+	         */
+	      }catch(Exception e){
+	         e.printStackTrace();
+	         System.out.println(e.getMessage());
+	      }
+
+	   }
+
+	}

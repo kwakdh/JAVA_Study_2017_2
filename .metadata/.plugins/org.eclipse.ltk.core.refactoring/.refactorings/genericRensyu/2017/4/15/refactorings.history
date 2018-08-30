@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;genericRensyu.FruitBoxEx1&apos; to &apos;Student&apos;&#x0D;&#x0A;- Original project: &apos;genericRensyu&apos;&#x0D;&#x0A;- Original element: &apos;genericRensyu.FruitBoxEx1&apos;&#x0D;&#x0A;- Renamed element: &apos;genericRensyu.Student&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FruitBoxEx1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;genericRensyu{FruitBoxEx1.java[FruitBoxEx1" matchStrategy="1" name="Student" qualified="false" references="true" similarDeclarations="false" stamp="1491912581510" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;abc.PriorityQueue&apos; to &apos;PriorityQueueExam&apos;&#x0D;&#x0A;- Original project: &apos;abc&apos;&#x0D;&#x0A;- Original element: &apos;abc.PriorityQueue&apos;&#x0D;&#x0A;- Renamed element: &apos;abc.PriorityQueueExam&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PriorityQueue&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;abc{PriorityQueue.java[PriorityQueue" matchStrategy="1" name="PriorityQueueExam" qualified="false" references="true" similarDeclarations="false" stamp="1489367461512" textual="false" version="1.0"/>
+</session>
